@@ -132,12 +132,16 @@ export default function App() {
         style={{
           background: 'rgba(10,22,40,0.97)',
           backdropFilter: 'blur(10px)',
-          borderBottom: '1px solid rgba(255,255,255,0.08)',
+          borderBottom: '1px solid rgba(0,122,61,0.2)',
           minHeight: '60px',
         }}
       >
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: 'rgba(245,158,11,0.2)' }}>
+        {/* Logo */}
+        <div className="flex items-center gap-2 shrink-0">
+          <div
+            className="w-8 h-8 rounded-lg flex items-center justify-center"
+            style={{ background: 'rgba(0,122,61,0.2)', border: '1px solid rgba(0,122,61,0.3)' }}
+          >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="#007A3D">
               <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
             </svg>
@@ -166,25 +170,38 @@ export default function App() {
       {locationStatus === 'denied' && (
         <div
           className="flex items-center gap-3 px-4 py-2 shrink-0"
-          style={{ background: 'rgba(245,158,11,0.1)', borderBottom: '1px solid rgba(245,158,11,0.15)' }}
+          style={{ background: 'rgba(206,17,38,0.08)', borderBottom: '1px solid rgba(206,17,38,0.15)' }}
         >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="#007A3D">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#CE1126">
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
           </svg>
-          <span className="text-green-400 text-xs flex-1" style={{ fontFamily: "'Cairo', sans-serif" }}>
+          <span className="text-white/70 text-xs flex-1" style={{ fontFamily: "'Cairo', sans-serif" }}>
             {t('location.denied')}
           </span>
-          <button onClick={requestLocation} className="text-green-400 text-xs font-semibold underline" style={{ fontFamily: "'Cairo', sans-serif" }}>
+          <button
+            onClick={requestLocation}
+            className="text-xs font-semibold px-3 py-1 rounded-full transition-all"
+            style={{ background: 'rgba(0,122,61,0.2)', color: '#4DB87A', border: '1px solid rgba(0,122,61,0.3)', fontFamily: "'Cairo', sans-serif" }}
+          >
             {t('location.enableLocation')}
           </button>
         </div>
       )}
 
       {/* View tab bar */}
-      <div className="flex shrink-0" style={{ background: 'rgba(10,22,40,0.9)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+      <div
+        className="flex shrink-0"
+        style={{ background: 'rgba(10,22,40,0.95)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}
+      >
         {[
-          { key: 'map', label: t('nav.map'), icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z" /></svg> },
-          { key: 'list', label: t('nav.list'), icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z" /></svg> },
+          {
+            key: 'map', label: t('nav.map'),
+            icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z" /></svg>
+          },
+          {
+            key: 'list', label: t('nav.list'),
+            icon: <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z" /></svg>
+          },
         ].map(({ key, label, icon }) => (
           <button
             key={key}
@@ -192,9 +209,9 @@ export default function App() {
             className="flex-1 py-2.5 text-sm font-semibold transition-all flex items-center justify-center gap-1.5"
             style={{
               fontFamily: "'Cairo', sans-serif",
-              color: view === key ? '#007A3D' : 'rgba(255,255,255,0.4)',
+              color: view === key ? '#4DB87A' : 'rgba(255,255,255,0.4)',
               borderBottom: `2px solid ${view === key ? '#007A3D' : 'transparent'}`,
-              background: 'transparent',
+              background: view === key ? 'rgba(0,122,61,0.06)' : 'transparent',
             }}
           >
             {icon}{label}
@@ -203,7 +220,12 @@ export default function App() {
         <button
           onClick={() => setShowEmergency(true)}
           className="px-4 py-2.5 text-sm font-semibold transition-all flex items-center gap-1.5"
-          style={{ fontFamily: "'Cairo', sans-serif", color: '#F87171', borderBottom: '2px solid transparent', background: 'transparent' }}
+          style={{
+            fontFamily: "'Cairo', sans-serif",
+            color: '#F87171',
+            borderBottom: '2px solid transparent',
+            background: 'transparent',
+          }}
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
             <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
@@ -239,14 +261,14 @@ export default function App() {
                 left: '50%',
                 transform: 'translateX(-50%)',
                 background: 'rgba(10,22,40,0.95)',
-                border: '1px solid rgba(245,158,11,0.5)',
+                border: '1px solid rgba(0,122,61,0.5)',
                 borderRadius: '50px',
                 padding: '9px 18px',
-                color: '#007A3D',
+                color: '#4DB87A',
                 fontFamily: "'Cairo', sans-serif",
                 fontSize: '0.82rem',
                 fontWeight: '700',
-                boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
+                boxShadow: '0 4px 24px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,122,61,0.15)',
                 backdropFilter: 'blur(10px)',
                 whiteSpace: 'nowrap',
                 maxWidth: '90vw',
@@ -254,7 +276,7 @@ export default function App() {
                 textOverflow: 'ellipsis',
               }}
             >
-              ★ {t('shelters.nearest')}: {isAr ? nearestShelter.nameAr : nearestShelter.nameEn}
+              🛡 {t('shelters.nearest')}: {isAr ? nearestShelter.nameAr : nearestShelter.nameEn}
               {nearestShelter.distance != null && formatDistChip(nearestShelter.distance)}
             </button>
           )}
@@ -298,7 +320,7 @@ export default function App() {
       {/* Footer strip */}
       <div
         className="shrink-0 px-4 py-1 text-center"
-        style={{ background: 'rgba(10,22,40,0.97)', borderTop: '1px solid rgba(255,255,255,0.05)' }}
+        style={{ background: 'rgba(10,22,40,0.97)', borderTop: '1px solid rgba(0,122,61,0.1)' }}
       >
         <p className="text-white/20 text-xs" style={{ fontFamily: "'Cairo', sans-serif" }}>
           {t('footer.lastUpdated')}: {shelterData.dataLastUpdated} · {t('footer.dataSource')}
@@ -315,10 +337,17 @@ export default function App() {
       {showInstallPrompt && (
         <div
           className="fixed bottom-24 left-4 right-4 z-[800] p-4 rounded-2xl animate-slide-up"
-          style={{ background: '#0d1f3c', border: '1px solid rgba(245,158,11,0.3)', boxShadow: '0 8px 30px rgba(0,0,0,0.5)' }}
+          style={{
+            background: 'linear-gradient(135deg, #0d1f3c, #0a1628)',
+            border: '1px solid rgba(0,122,61,0.35)',
+            boxShadow: '0 8px 30px rgba(0,0,0,0.5)',
+          }}
         >
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: 'rgba(245,158,11,0.15)' }}>
+            <div
+              className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
+              style={{ background: 'rgba(0,122,61,0.2)', border: '1px solid rgba(0,122,61,0.3)' }}
+            >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="#007A3D">
                 <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
               </svg>
@@ -327,10 +356,17 @@ export default function App() {
               {t('install.prompt')}
             </p>
             <div className="flex gap-2 shrink-0">
-              <button onClick={() => setShowInstallPrompt(false)} className="px-3 py-2 rounded-lg text-sm text-white/40">
+              <button
+                onClick={() => setShowInstallPrompt(false)}
+                className="px-3 py-2 rounded-lg text-sm text-white/40 hover:text-white/60 transition-colors"
+              >
                 {t('install.dismiss')}
               </button>
-              <button onClick={handleInstall} className="px-4 py-2 rounded-lg text-sm font-semibold" style={{ background: '#007A3D', color: '#FFFFFF' }}>
+              <button
+                onClick={handleInstall}
+                className="px-4 py-2 rounded-lg text-sm font-semibold transition-all hover:scale-105 active:scale-95"
+                style={{ background: 'linear-gradient(135deg, #007A3D, #005C2E)', color: '#FFFFFF' }}
+              >
                 {t('install.install')}
               </button>
             </div>

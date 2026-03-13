@@ -74,7 +74,7 @@ export default function NavigationOverlay({ shelter, userCoords, onStop, mapRef 
       className="fixed top-20 left-1/2 z-[900] -translate-x-1/2 animate-fade-in"
       style={{
         background: 'rgba(10,22,40,0.95)',
-        border: '1px solid rgba(245,158,11,0.4)',
+        border: '1px solid rgba(0,122,61,0.4)',
         borderRadius: '16px',
         boxShadow: '0 4px 30px rgba(0,0,0,0.5)',
         backdropFilter: 'blur(10px)',
@@ -87,7 +87,7 @@ export default function NavigationOverlay({ shelter, userCoords, onStop, mapRef 
       <div className="flex items-center gap-3">
         <div
           className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 animate-pulse"
-          style={{ background: 'rgba(245,158,11,0.2)' }}
+          style={{ background: 'rgba(0,122,61,0.2)' }}
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="#007A3D">
             <path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.02 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z" />

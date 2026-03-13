@@ -253,3 +253,76 @@ button, a[role="button"], [role="button"] {
 .leaflet-tooltip-top:before {
   border-top-color: rgba(0, 122, 61, 0.4) !important;
 }
+
+/* Panic button - fixed position */
+.panic-button {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  z-index: 900;
+  background: linear-gradient(135deg, #CE1126, #a50e1e);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-family: 'Cairo', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(206,17,38,0.45), 0 2px 8px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  min-height: 48px;
+  touch-action: manipulation;
+}
+
+[dir="rtl"] .panic-button {
+  right: auto;
+  left: 20px;
+}
+
+.panic-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 28px rgba(206,17,38,0.55), 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.panic-button:active {
+  transform: scale(0.97);
+}
+
+/* Map zoom controls */
+.leaflet-control-zoom {
+  border: 1px solid rgba(0,122,61,0.3) !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4) !important;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  background: rgba(10,22,40,0.92) !important;
+  color: rgba(255,255,255,0.7) !important;
+  border-bottom: 1px solid rgba(0,122,61,0.2) !important;
+  font-size: 18px !important;
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  transition: background 0.15s, color 0.15s !important;
+}
+
+.leaflet-control-zoom-in:hover,
+.leaflet-control-zoom-out:hover {
+  background: rgba(0,122,61,0.25) !important;
+  color: #4DB87A !important;
+}
+
+/* Attribution */
+.leaflet-control-attribution {
+  background: rgba(10,22,40,0.75) !important;
+  color: rgba(255,255,255,0.3) !important;
+  font-size: 9px !important;
+  border-radius: 6px 0 0 0 !important;
+}
+
+.leaflet-control-attribution a {
+  color: rgba(0,122,61,0.8) !important;
+}
