@@ -97,7 +97,7 @@ export default function PanicButton({ userCoords }) {
                 className="mx-4 mt-4 p-3 rounded-xl text-center"
                 style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
               >
-                <p className="text-amber-400 text-xs font-mono">
+                <p className="text-green-400 text-xs font-mono">
                   {userCoords.lat.toFixed(6)}, {userCoords.lng.toFixed(6)}
                 </p>
                 <a

@@ -20,7 +20,7 @@ export default function LanguageSwitcher({ compact = false }) {
         style={{
           background: 'rgba(245,158,11,0.12)',
           border: '1px solid rgba(245,158,11,0.25)',
-          color: '#F59E0B',
+          color: '#4DB87A',
         }}
         aria-label="Switch language"
       >
@@ -39,7 +39,7 @@ export default function LanguageSwitcher({ compact = false }) {
         className="px-4 py-2 text-sm font-semibold transition-all"
         style={{
           background: isAr ? 'rgba(245,158,11,0.2)' : 'transparent',
-          color: isAr ? '#F59E0B' : 'rgba(255,255,255,0.5)',
+          color: isAr ? '#4DB87A' : 'rgba(255,255,255,0.5)',
           fontFamily: "'Cairo', sans-serif",
         }}
       >
@@ -50,7 +50,7 @@ export default function LanguageSwitcher({ compact = false }) {
         className="px-4 py-2 text-sm font-semibold transition-all"
         style={{
           background: !isAr ? 'rgba(245,158,11,0.2)' : 'transparent',
-          color: !isAr ? '#F59E0B' : 'rgba(255,255,255,0.5)',
+          color: !isAr ? '#4DB87A' : 'rgba(255,255,255,0.5)',
         }}
       >
         English

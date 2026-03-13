@@ -38,7 +38,7 @@ export default function NavigationOverlay({ shelter, userCoords, onStop, mapRef 
           addWaypoints: false,
           fitSelectedRoutes: true,
           lineOptions: {
-            styles: [{ color: '#F59E0B', weight: 5, opacity: 0.85 }],
+            styles: [{ color: '#007A3D', weight: 5, opacity: 0.85 }],
             extendToWaypoints: true,
             missingRouteTolerance: 0,
           },
@@ -89,12 +89,12 @@ export default function NavigationOverlay({ shelter, userCoords, onStop, mapRef 
           className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 animate-pulse"
           style={{ background: 'rgba(245,158,11,0.2)' }}
         >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#007A3D">
             <path d="M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.02 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z" />
           </svg>
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-amber-400 text-xs font-semibold" style={{ fontFamily: "'Cairo', sans-serif" }}>
+          <p className="text-green-400 text-xs font-semibold" style={{ fontFamily: "'Cairo', sans-serif" }}>
             {t('navigation.title')}
           </p>
           <p className="text-white font-bold text-sm truncate" style={{ fontFamily: "'Cairo', sans-serif" }}>

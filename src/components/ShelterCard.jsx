@@ -8,7 +8,7 @@ function ActionButton({ onClick, href, children, variant = 'default', icon }) {
   const base = "flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-semibold text-sm transition-all active:scale-95 w-full";
 
   const styles = {
-    primary: { background: 'linear-gradient(135deg, #F59E0B, #D97706)', color: '#0A1628' },
+    primary: { background: 'linear-gradient(135deg, #007A3D, #005C2E)', color: '#FFFFFF' },
     google: { background: 'rgba(66,133,244,0.15)', border: '1px solid rgba(66,133,244,0.3)', color: '#4285F4' },
     waze: { background: 'rgba(0,212,255,0.12)', border: '1px solid rgba(0,212,255,0.25)', color: '#00D4FF' },
     share: { background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', color: 'white' },
@@ -113,7 +113,7 @@ export default function ShelterCard({ shelter, onClose, onNavigate, isNavigating
             {isNearest && (
               <span
                 className="text-xs font-semibold px-2 py-0.5 rounded-full"
-                style={{ background: 'rgba(245,158,11,0.2)', color: '#F59E0B', border: '1px solid rgba(245,158,11,0.3)' }}
+                style={{ background: 'rgba(0,122,61,0.2)', color: '#4DB87A', border: '1px solid rgba(0,122,61,0.35)' }}
               >
                 ★ {t('shelters.nearest')}
               </span>
@@ -156,10 +156,10 @@ export default function ShelterCard({ shelter, onClose, onNavigate, isNavigating
       {distText && (
         <div
           className="mx-4 mb-3 p-3 rounded-xl flex items-center gap-4"
-          style={{ background: 'rgba(245,158,11,0.08)', border: '1px solid rgba(245,158,11,0.15)' }}
+          style={{ background: 'rgba(0,122,61,0.08)', border: '1px solid rgba(0,122,61,0.18)' }}
         >
           <div className="flex-1 text-center">
-            <div className="text-amber-400 font-bold text-xl">{distText}</div>
+            <div className="font-bold text-xl" style={{ color: '#4DB87A' }}>{distText}</div>
             <div className="text-white/40 text-xs">{t('distance.away')}</div>
           </div>
           <div className="w-px h-10 bg-white/10" />

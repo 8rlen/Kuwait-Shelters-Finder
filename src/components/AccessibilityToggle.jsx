@@ -46,7 +46,7 @@ export default function AccessibilityToggle({ highContrast, largeText, onHighCon
             <div
               onClick={() => onHighContrastChange(!highContrast)}
               className="relative w-11 h-6 rounded-full transition-colors cursor-pointer"
-              style={{ background: highContrast ? '#F59E0B' : 'rgba(255,255,255,0.15)' }}
+              style={{ background: highContrast ? '#007A3D' : 'rgba(255,255,255,0.15)' }}
             >
               <div
                 className="absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform"
@@ -60,7 +60,7 @@ export default function AccessibilityToggle({ highContrast, largeText, onHighCon
             <div
               onClick={() => onLargeTextChange(!largeText)}
               className="relative w-11 h-6 rounded-full transition-colors cursor-pointer"
-              style={{ background: largeText ? '#F59E0B' : 'rgba(255,255,255,0.15)' }}
+              style={{ background: largeText ? '#007A3D' : 'rgba(255,255,255,0.15)' }}
             >
               <div
                 className="absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform"

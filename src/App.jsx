@@ -138,7 +138,7 @@ export default function App() {
       >
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: 'rgba(245,158,11,0.2)' }}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#F59E0B">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#007A3D">
               <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
             </svg>
           </div>
@@ -168,13 +168,13 @@ export default function App() {
           className="flex items-center gap-3 px-4 py-2 shrink-0"
           style={{ background: 'rgba(245,158,11,0.1)', borderBottom: '1px solid rgba(245,158,11,0.15)' }}
         >
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#007A3D">
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
           </svg>
-          <span className="text-amber-400 text-xs flex-1" style={{ fontFamily: "'Cairo', sans-serif" }}>
+          <span className="text-green-400 text-xs flex-1" style={{ fontFamily: "'Cairo', sans-serif" }}>
             {t('location.denied')}
           </span>
-          <button onClick={requestLocation} className="text-amber-400 text-xs font-semibold underline" style={{ fontFamily: "'Cairo', sans-serif" }}>
+          <button onClick={requestLocation} className="text-green-400 text-xs font-semibold underline" style={{ fontFamily: "'Cairo', sans-serif" }}>
             {t('location.enableLocation')}
           </button>
         </div>
@@ -192,8 +192,8 @@ export default function App() {
             className="flex-1 py-2.5 text-sm font-semibold transition-all flex items-center justify-center gap-1.5"
             style={{
               fontFamily: "'Cairo', sans-serif",
-              color: view === key ? '#F59E0B' : 'rgba(255,255,255,0.4)',
-              borderBottom: `2px solid ${view === key ? '#F59E0B' : 'transparent'}`,
+              color: view === key ? '#007A3D' : 'rgba(255,255,255,0.4)',
+              borderBottom: `2px solid ${view === key ? '#007A3D' : 'transparent'}`,
               background: 'transparent',
             }}
           >
@@ -242,7 +242,7 @@ export default function App() {
                 border: '1px solid rgba(245,158,11,0.5)',
                 borderRadius: '50px',
                 padding: '9px 18px',
-                color: '#F59E0B',
+                color: '#007A3D',
                 fontFamily: "'Cairo', sans-serif",
                 fontSize: '0.82rem',
                 fontWeight: '700',
@@ -319,7 +319,7 @@ export default function App() {
         >
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{ background: 'rgba(245,158,11,0.15)' }}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="#F59E0B">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#007A3D">
                 <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
               </svg>
             </div>
@@ -330,7 +330,7 @@ export default function App() {
               <button onClick={() => setShowInstallPrompt(false)} className="px-3 py-2 rounded-lg text-sm text-white/40">
                 {t('install.dismiss')}
               </button>
-              <button onClick={handleInstall} className="px-4 py-2 rounded-lg text-sm font-semibold" style={{ background: '#F59E0B', color: '#0A1628' }}>
+              <button onClick={handleInstall} className="px-4 py-2 rounded-lg text-sm font-semibold" style={{ background: '#007A3D', color: '#FFFFFF' }}>
                 {t('install.install')}
               </button>
             </div>

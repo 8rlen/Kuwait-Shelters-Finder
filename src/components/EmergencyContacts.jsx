@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 const CONTACTS = [
   { key: 'general', icon: '🆘', color: '#DC2626', bgColor: 'rgba(220,38,38,0.15)' },
-  { key: 'civilDefense', icon: '🛡️', color: '#F59E0B', bgColor: 'rgba(245,158,11,0.15)' },
+  { key: 'civilDefense', icon: '🛡️', color: '#007A3D', bgColor: 'rgba(0,122,61,0.15)' },
   { key: 'police', icon: '👮', color: '#3B82F6', bgColor: 'rgba(59,130,246,0.15)' },
   { key: 'ambulance', icon: '🚑', color: '#10B981', bgColor: 'rgba(16,185,129,0.15)' },
   { key: 'moiHotline', icon: '📞', color: '#8B5CF6', bgColor: 'rgba(139,92,246,0.15)', labelOverride: 'MOI Hotline' },

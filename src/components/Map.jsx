@@ -7,7 +7,7 @@ const KUWAIT_CENTER = [29.31166, 47.4818];
 const KUWAIT_ZOOM = 11;
 
 function createShieldIcon(L, isNearest, isSelected) {
-  const color = isNearest ? '#F59E0B' : isSelected ? '#60A5FA' : '#94a3b8';
+  const color = isNearest ? '#007A3D' : isSelected ? '#60A5FA' : '#94a3b8';
   const size = isNearest ? 36 : 28;
   const pulseClass = isNearest ? 'pulse-nearest' : '';
 

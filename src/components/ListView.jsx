@@ -26,10 +26,10 @@ function ShelterListItem({ shelter, isNearest, onSelect, t, isAr }) {
       <div
         className="w-11 h-11 rounded-full flex items-center justify-center shrink-0"
         style={{
-          background: isNearest ? 'rgba(245,158,11,0.2)' : 'rgba(255,255,255,0.05)',
+          background: isNearest ? 'rgba(0,122,61,0.2)' : 'rgba(255,255,255,0.05)',
         }}
       >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill={isNearest ? '#F59E0B' : 'rgba(255,255,255,0.4)'}>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill={isNearest ? '#007A3D' : 'rgba(255,255,255,0.4)'}>
           <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
         </svg>
       </div>
@@ -40,7 +40,7 @@ function ShelterListItem({ shelter, isNearest, onSelect, t, isAr }) {
           {isNearest && (
             <span
               className="text-xs font-semibold px-1.5 py-0.5 rounded"
-              style={{ background: 'rgba(245,158,11,0.2)', color: '#F59E0B' }}
+              style={{ background: 'rgba(0,122,61,0.2)', color: '#007A3D' }}
             >
               ★
             </span>
@@ -65,7 +65,7 @@ function ShelterListItem({ shelter, isNearest, onSelect, t, isAr }) {
       {/* Distance */}
       {dist && (
         <div className="shrink-0 text-right" style={{ direction: 'ltr' }}>
-          <div className="text-amber-400 font-bold text-sm">{dist}</div>
+          <div className="text-green-400 font-bold text-sm">{dist}</div>
           <div className="text-white/40 text-xs">🚶 {walk}</div>
         </div>
       )}
@@ -74,7 +74,7 @@ function ShelterListItem({ shelter, isNearest, onSelect, t, isAr }) {
       <button
         onClick={(e) => { e.stopPropagation(); onSelect(shelter); }}
         className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-all hover:scale-110"
-        style={{ background: isNearest ? '#F59E0B' : 'rgba(255,255,255,0.08)', color: isNearest ? '#0A1628' : 'white' }}
+        style={{ background: isNearest ? '#007A3D' : 'rgba(255,255,255,0.08)', color: isNearest ? '#FFFFFF' : 'white' }}
         aria-label={t('actions.go')}
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
