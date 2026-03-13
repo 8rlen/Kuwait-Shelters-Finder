@@ -1,0 +1,147 @@
+{
+  "app": {
+    "name": "دليل ملاجئ الكويت",
+    "nameShort": "ملاجئ الكويت",
+    "tagline": "أقرب ملجأ إليك في ثوانٍ"
+  },
+  "splash": {
+    "dua": "اللهم اجعل هذا البلد آمناً",
+    "enter": "دخول",
+    "loading": "جاري التحميل..."
+  },
+  "nav": {
+    "map": "الخريطة",
+    "list": "القائمة",
+    "emergency": "الطوارئ"
+  },
+  "location": {
+    "permissionPrompt": "نحتاج موقعك لإيجاد أقرب ملجأ إليك",
+    "detecting": "جاري تحديد موقعك...",
+    "denied": "تم رفض الإذن. اختر منطقتك يدوياً",
+    "error": "تعذّر تحديد الموقع",
+    "yourLocation": "موقعك الحالي",
+    "enableLocation": "تفعيل الموقع",
+    "selectArea": "اختر منطقتك"
+  },
+  "shelters": {
+    "nearest": "أقرب ملجأ",
+    "allShelters": "جميع الملاجئ",
+    "shelter": "ملجأ",
+    "noShelters": "لا توجد ملاجئ في هذه المنطقة",
+    "searchPlaceholder": "ابحث بالاسم أو المنطقة...",
+    "capacity": "الطاقة الاستيعابية",
+    "persons": "شخص",
+    "region": "المنطقة",
+    "governorate": "المحافظة",
+    "lastVerified": "آخر تحقق",
+    "dataQuality": {
+      "verified": "موقع مؤكد",
+      "approximate": "موقع تقريبي"
+    },
+    "status": {
+      "open": "مفتوح",
+      "unknown": "غير محدد"
+    }
+  },
+  "distance": {
+    "km": "كم",
+    "m": "م",
+    "walk": "مشياً",
+    "drive": "بالسيارة",
+    "min": "دقيقة",
+    "mins": "دقائق",
+    "away": "منك"
+  },
+  "actions": {
+    "navigate": "ابدأ التنقل",
+    "navigateInApp": "التنقل داخل التطبيق",
+    "openGoogleMaps": "فتح في خرائط جوجل",
+    "openWaze": "فتح في Waze",
+    "share": "مشاركة الملجأ",
+    "reportLocation": "الإبلاغ عن خطأ في الموقع",
+    "stopNavigation": "إيقاف التنقل",
+    "close": "إغلاق",
+    "go": "انطلق",
+    "refresh": "تحديث",
+    "copy": "نسخ الرابط",
+    "copied": "تم النسخ!",
+    "shareWhatsApp": "مشاركة عبر واتساب",
+    "shareSMS": "مشاركة عبر SMS",
+    "findNearest": "أوجد لي أقرب ملجأ",
+    "myLocation": "موقعي"
+  },
+  "panic": {
+    "button": "شارك موقعي",
+    "title": "مشاركة موقعك",
+    "description": "ابعث موقعك الحالي لأشخاص تثق بهم",
+    "linkCopied": "تم نسخ الرابط!",
+    "shareMessage": "أنا في هذا الموقع: "
+  },
+  "navigation": {
+    "title": "التنقل إلى الملجأ",
+    "calculating": "جاري حساب المسار...",
+    "distanceRemaining": "المسافة المتبقية",
+    "routeReady": "المسار جاهز",
+    "arrived": "وصلت إلى الملجأ",
+    "mode": {
+      "walking": "مشياً",
+      "driving": "بالسيارة"
+    }
+  },
+  "emergency": {
+    "title": "أرقام الطوارئ",
+    "civilDefense": "الدفاع المدني",
+    "police": "الشرطة",
+    "ambulance": "الإسعاف",
+    "moi": "وزارة الداخلية",
+    "fireStation": "المطافئ",
+    "generalEmergency": "الطوارئ العامة",
+    "numbers": {
+      "civilDefense": "994",
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112",
+      "moiHotline": "1800-151",
+      "general": "112"
+    }
+  },
+  "areaPicker": {
+    "title": "اختر منطقتك",
+    "placeholder": "اختر محافظة أو منطقة",
+    "governorates": {
+      "capital": "محافظة العاصمة",
+      "hawalli": "محافظة حولي",
+      "farwaniya": "محافظة الفروانية",
+      "ahmadi": "محافظة الأحمدي",
+      "jahra": "محافظة الجهراء",
+      "mubarak": "محافظة مبارك الكبير"
+    }
+  },
+  "accessibility": {
+    "title": "إعدادات إمكانية الوصول",
+    "highContrast": "وضع التباين العالي",
+    "largeText": "نص كبير",
+    "language": "اللغة"
+  },
+  "footer": {
+    "dataSource": "بيانات الملاجئ مصدرها وزارة الداخلية الكويتية",
+    "dataSourceEn": "Shelter data sourced from Kuwait Ministry of Interior",
+    "lastUpdated": "آخر تحديث للبيانات",
+    "reportContact": "للإبلاغ عن خطأ"
+  },
+  "errors": {
+    "mapLoad": "تعذّر تحميل الخريطة",
+    "locationError": "خطأ في تحديد الموقع",
+    "routeError": "تعذّر حساب المسار",
+    "generic": "حدث خطأ، يرجى المحاولة مجدداً"
+  },
+  "report": {
+    "subject": "الإبلاغ عن خطأ في موقع ملجأ",
+    "body": "السلام عليكم،\n\nأود الإبلاغ عن خطأ في موقع الملجأ التالي:\n\nاسم الملجأ: {name}\nرقم الملجأ: {id}\n\nالخطأ المُبلَّغ عنه:\n"
+  },
+  "install": {
+    "prompt": "ثبّت التطبيق على شاشتك الرئيسية",
+    "install": "تثبيت",
+    "dismiss": "لاحقاً"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "app": {
+    "name": "Kuwait Shelters Finder",
+    "nameShort": "KW Shelters",
+    "tagline": "Find your nearest shelter in seconds"
+  },
+  "splash": {
+    "dua": "اللهم اجعل هذا البلد آمناً",
+    "enter": "Enter",
+    "loading": "Loading..."
+  },
+  "nav": {
+    "map": "Map",
+    "list": "List",
+    "emergency": "Emergency"
+  },
+  "location": {
+    "permissionPrompt": "We need your location to find the nearest shelter",
+    "detecting": "Detecting your location...",
+    "denied": "Location access denied. Select your area manually",
+    "error": "Could not detect location",
+    "yourLocation": "Your Location",
+    "enableLocation": "Enable Location",
+    "selectArea": "Select Area"
+  },
+  "shelters": {
+    "nearest": "Nearest Shelter",
+    "allShelters": "All Shelters",
+    "shelter": "Shelter",
+    "noShelters": "No shelters found in this area",
+    "searchPlaceholder": "Search by name or area...",
+    "capacity": "Capacity",
+    "persons": "persons",
+    "region": "Region",
+    "governorate": "Governorate",
+    "lastVerified": "Last Verified",
+    "dataQuality": {
+      "verified": "Verified Location",
+      "approximate": "Approximate Location"
+    },
+    "status": {
+      "open": "Open",
+      "unknown": "Unknown"
+    }
+  },
+  "distance": {
+    "km": "km",
+    "m": "m",
+    "walk": "walk",
+    "drive": "drive",
+    "min": "min",
+    "mins": "mins",
+    "away": "away"
+  },
+  "actions": {
+    "navigate": "Navigate",
+    "navigateInApp": "Navigate in App",
+    "openGoogleMaps": "Open in Google Maps",
+    "openWaze": "Open in Waze",
+    "share": "Share Shelter",
+    "reportLocation": "Report Incorrect Location",
+    "stopNavigation": "Stop Navigation",
+    "close": "Close",
+    "go": "Go",
+    "refresh": "Refresh",
+    "copy": "Copy Link",
+    "copied": "Copied!",
+    "shareWhatsApp": "Share via WhatsApp",
+    "shareSMS": "Share via SMS",
+    "findNearest": "Find Nearest Shelter",
+    "myLocation": "My Location"
+  },
+  "panic": {
+    "button": "Share My Location",
+    "title": "Share Your Location",
+    "description": "Send your current location to people you trust",
+    "linkCopied": "Link copied!",
+    "shareMessage": "I am at this location: "
+  },
+  "navigation": {
+    "title": "Navigating to Shelter",
+    "calculating": "Calculating route...",
+    "distanceRemaining": "Distance remaining",
+    "routeReady": "Route ready",
+    "arrived": "You have arrived at the shelter",
+    "mode": {
+      "walking": "Walking",
+      "driving": "Driving"
+    }
+  },
+  "emergency": {
+    "title": "Emergency Numbers",
+    "civilDefense": "Civil Defense",
+    "police": "Police",
+    "ambulance": "Ambulance",
+    "moi": "Ministry of Interior",
+    "fireStation": "Fire Station",
+    "generalEmergency": "General Emergency",
+    "numbers": {
+      "civilDefense": "994",
+      "police": "112",
+      "ambulance": "112",
+      "fire": "112",
+      "moiHotline": "1800-151",
+      "general": "112"
+    }
+  },
+  "areaPicker": {
+    "title": "Select Your Area",
+    "placeholder": "Select a governorate or area",
+    "governorates": {
+      "capital": "Capital Governorate",
+      "hawalli": "Hawalli Governorate",
+      "farwaniya": "Farwaniya Governorate",
+      "ahmadi": "Ahmadi Governorate",
+      "jahra": "Jahra Governorate",
+      "mubarak": "Mubarak Al-Kabeer Governorate"
+    }
+  },
+  "accessibility": {
+    "title": "Accessibility Settings",
+    "highContrast": "High Contrast Mode",
+    "largeText": "Large Text",
+    "language": "Language"
+  },
+  "footer": {
+    "dataSource": "بيانات الملاجئ مصدرها وزارة الداخلية الكويتية",
+    "dataSourceEn": "Shelter data sourced from Kuwait Ministry of Interior",
+    "lastUpdated": "Data last updated",
+    "reportContact": "Report an error"
+  },
+  "errors": {
+    "mapLoad": "Could not load the map",
+    "locationError": "Location error",
+    "routeError": "Could not calculate route",
+    "generic": "An error occurred, please try again"
+  },
+  "report": {
+    "subject": "Report Shelter Location Error",
+    "body": "Hello,\n\nI would like to report an error for the following shelter:\n\nShelter Name: {name}\nShelter ID: {id}\n\nIssue reported:\n"
+  },
+  "install": {
+    "prompt": "Install the app on your home screen",
+    "install": "Install",
+    "dismiss": "Later"
+  }
+}
